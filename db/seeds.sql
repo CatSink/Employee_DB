@@ -1,23 +1,35 @@
-INSERT INTO department (id, name) 
-VALUES( 1, 'Finance'),
-    ( 2, 'Marketing'),
-    (3, 'Human Resources'),
-    (4, 'Customer Services'),
-    (5, 'Sales Representative');
-INSERT INTO role (id,title,salary,department_id)
-VALUES (1, 'Sales Representative Specialist', 40,000,5),
-    (2, 'Customer Services Specialist', 45,000,4),
-    (3, 'Human Resources Specialist', 50,000,3),
-    (4, 'Marketing Specialist', 55,000,2),
-    (5, 'Finance Specialist', 60,000,1);
-INSERT INTO employee (id, first_name, last_name, manager_id) 
-VALUES (1, 'Gina', 'King',1),
-       (2, 'Giovonni', 'Gnoche', 2),
-       (3, 'Jesse', 'Freeman', 3),
-       (4, 'Fiona', 'Applegate', 4);
-       (5, 'Daniel', 'Frieze', 5),
-       (6, 'Erich', 'Lazier',3),
-       (7, 'Elane', 'Goosedown',2),
-       (8, 'Trish', 'Piedmont',1),
-       (9, 'Peter', 'Petigrew',5),
-       (10, 'Jaimie', 'Holmes',4);      
+INSERT INTO department (title)
+VALUES ('Engineering'),
+       ('Finance'),
+       ('Legal'),
+       ('Sales'),
+       ('Marketing'),
+       ('Customer Services'),
+       ('Human Resources');
+
+INSERT INTO roles (title, salary, department_id)
+VALUES ('Sales Lead', 100000, 4),
+       ('Sales Specialist', 80000, 4),
+       ('Customer Services Lead', 90000, 6),
+       ('Customer Services Specialist', 80000, 6),
+       ('Marketing Lead', 105000, 5),
+       ('Marketing Specialist', 100000, 5),
+       ('Human Resources Lead', 150000, 7),
+       ('Human Resources Specialist', 110000, 7),
+       ('Lead Engineer', 150000, 1),
+       ('Software Engineer', 120000, 1),
+       ('Account Manager', 160000, 2),
+       ('Accountant', 125000, 2),
+       ('Legal Team Lead', 250000, 3),
+       ('Lawyer', 190000, 3);
+
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES ('Jesse', 'Freedman', 1, NULL),
+       ('Fiona', 'Goosedown', 2, 1),
+       ('Raymond', 'Frieze', 3, NULL),
+       ('Alma', 'Yoder', 4, 3),
+       ('Elane', 'Terrell', 5, NULL),
+       ('Peter', 'Petigrew', 6, 5),
+       ('Giovonni', 'Gnoche', 7, NULL),
+       ('Erich', 'Vanallen', 8, NULL);
+ 
