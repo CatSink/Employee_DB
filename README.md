@@ -16,6 +16,8 @@ To use this application, you will need to install NodeJS and MySQL. Clone this r
 To start the application open the index.js file in the integrated terminal. Type npm install then enter to initialize the dependencies. Run the following command: node index, then press the enter key. The command will initiate a menu of prompts that will allow you to navigate the database.
 
 ## Usage
+A video tutorial can be accessed using the foloowing link.
+<https://drive.google.com/file/d/1gbvlmoT2xp7ngN1Z07GHR5W6HJ00YCjC/view>
 
 ## License
 
