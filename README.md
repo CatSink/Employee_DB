@@ -4,7 +4,7 @@
 
 This project is an application that allows users to interact with an employee database through the command line. The nodeJS and express frameworks allow the user to query and update employee data.The inquirer package provides a menu of options to the user to easily navigate the employee database running on the mysql server.
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -12,7 +12,8 @@ This project is an application that allows users to interact with an employee da
 
 ## Installation
 
-To use this application, you will need to install NodeJS and MySQL. To start the application open the file in the interated terminal in Visual Studio Code editor, type npm install to instialize the dependencies then run the following command node index. The command will initiate a menu of prompts that will allow you to navigate the database.
+To use this application, you will need to install NodeJS and MySQL. Clone this repository and then update the password to your MySQL passphrase. Now you are ready to go.
+To start the application open the index.js file in the integrated terminal. Type npm install then enter to initialize the dependencies. Run the following command: node index, then press the enter key. The command will initiate a menu of prompts that will allow you to navigate the database.
 
 ## Usage
 
